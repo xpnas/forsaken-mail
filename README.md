@@ -21,7 +21,7 @@ npm install && npm start
 ```
 if you want to run this inside a docker container
 ```
-docker run --name forsaken-mail -d -p 25:25 -p 3000:3000 xpnas/forsaken-mail
+docker run --name forsaken-mail -d -p 25:25 -p 3000:3000 xpnas/forsaken-mail:master
 ```
 Open your browser and type in
 ```
