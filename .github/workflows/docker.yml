@@ -20,8 +20,8 @@ jobs:
         cache-name: cache-node-modules-NPM
       with:
         path: ~/.npm
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('./Inotify.Vue/package.json') }}
-        restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('./Inotify.Vue/package.json') }}
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('./package.json') }}
+        restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('./package.json') }}
 
     - name: Cache node modules
       uses: actions/cache@v2
@@ -34,7 +34,7 @@ jobs:
 
     - name: InstallNode and BuildVue
       run: |
-        cd ./Inotify.Vue
+        cd ./
         npm install
         npm run build:prod
 
