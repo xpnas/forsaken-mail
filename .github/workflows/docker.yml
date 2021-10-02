@@ -49,4 +49,4 @@ jobs:
         tags: ${{ secrets.DOCKERHUB_TAG }}:master
 
     - name: 'Report Suecss'
-      run: curl ${{ secrets.INOTIFY }}/Inotify/masterIsOk!
+      run: curl ${{ secrets.INOTIFY }}/forsaken-mail is build sucess!
